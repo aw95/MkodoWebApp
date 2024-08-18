@@ -1,15 +1,11 @@
 import React from 'react';
 import { useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { toast } from 'react-toastify';
 import { Home, DrawList, TicketView } from '../routing/AppUrls';
 import Logo from '../assets/images/logo.jpg';
 
 const Menu = () => {
-    const pageTitle = 'Menu';
-    const navigate = useNavigate();
-
-
     return (
         <div className="dashboard-nav">
             <header>

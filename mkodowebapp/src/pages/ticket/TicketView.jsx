@@ -227,7 +227,7 @@ const TicketView = () => {
         <body>
             <div>
                 <div className="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-                    <h1 className="display-4">Tickets</h1>
+                    <h2 className="display-4">Tickets</h2>
                     <h3>Generate some tickets below and see if you win...</h3>
                     <button onClick={generateRandomNumbers}>Generate New Ticket</button>
                 </div>
@@ -242,7 +242,7 @@ const TicketView = () => {
                                     <br />
                                     <h5>Generate a new ticket above</h5>
                                 </div>
-                                <table id="numbersTable" className="hide" style={{ marginLeft: "auto", marginRight: "auto" }}>
+                                <table id="numbersTable" name="numbersTable" className="hide" style={{ marginLeft: "auto", marginRight: "auto" }}>
                                     <thead>
                                         <tr>
                                             <th></th>
@@ -254,12 +254,12 @@ const TicketView = () => {
                                             <td style={{ float: "left", columns: 6 }}>
                                                 {numbers && numbers.map(number => {
                                                     return (
-                                                        <h1 key={number}>{number}</h1>
+                                                        <h1 role="lotteryNumber" key={number}>{number}</h1>
                                                     )
                                                 })}
                                             </td>
                                             <td>
-                                                <h1>&nbsp; <b>{bonusBall}</b></h1>
+                                                <h1 role="lotteryNumber">&nbsp; <b>{bonusBall}</b></h1>
                                             </td>
                                         </tr>
                                     </tbody>

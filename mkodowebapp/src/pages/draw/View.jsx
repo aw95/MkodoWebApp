@@ -6,7 +6,7 @@ import { DrawList } from '../../routing/AppUrls';
 const View = () => {
     const navigate = useNavigate();
     const location = useLocation();
-    const [draw, setDraw] = useState(location.state.draw);
+    const [draw, setDraw] = useState(location.state?.draw || {});
 
     const toListView = () => {
         navigate((DrawList));

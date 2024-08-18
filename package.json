@@ -1,11 +1,15 @@
 {
   "dependencies": {
-    "@testing-library/react": "^16.0.0",
+    "@testing-library/jest-dom": "^6.4.8",
     "axios": "^1.7.4",
     "bootstrap": "^5.3.3",
     "jquery": "^3.7.1",
     "popper.js": "^1.16.1",
     "react-router-dom": "^6.26.1",
     "react-toastify": "^10.0.5"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.0.0"
   }
 }
